@@ -1,0 +1,406 @@
+<!-- ทุกคำที่ใช้ในนี้ เพื่อความเข้าใจของตัวเองล้วน ๆ เรย -->
+
+<!-- บรรทัดนี้มีหรือไม่มีก็ได้ -->
+<!DOCTYPE html>
+
+<html lang="en">
+  <!-- <head> เป็นสิ่งที่จะถูกเรียกก่อน ซึ่งมีผลต่อการแสดงผลบนเว็บจึงต้องจำมาไว้ใน<head>
+    เช่น พวกmetadata (คล้าย ๆ การimport ในpy) -->
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    
+  </head>
+
+  <!-- <body> เป็นสิ่งที่จะแสดงในเว็บ -->
+  <body style="background-color: rgb(255, 242, 226);">
+    <section class="section" id="header">
+      <!-- <h1> มาจาก header 1 จะมีขนาดใหญ่ที่สุด จากheaderทั้ง6ตัว -->
+      <!-- style สามารถใส่ใน h และ body ได้ ด้วย -->
+      <h4>//Section - 01</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.HEADER</strong>
+      </h1>
+      <p>.......</p>
+
+      <h1 style="color: rgb(94, 91, 91);">This is a header 1</h1>
+      <h2 style="color: rgb(94, 91, 91);">This is a header 2</h2>
+      <h3 style="color: rgb(94, 91, 91);">This is a header 3</h3>
+      <h4 style="color: rgb(94, 91, 91);">This is a header 4</h4>
+      <h5 style="color: rgb(94, 91, 91);">This is a header 5</h5>
+      <h6 style="color: rgb(94, 91, 91);">This is a header 6</h6>
+    </section>
+
+    <section class="section" id="paragrahp">
+      <!-- <p> เอาไว้แสดงข้อความยาว ๆ ของเว็บ -->
+      <h4>//Section - 02</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.PARAGRAHP</strong>
+      </h1>
+      <p>.......</p>
+
+      <p>
+        This is a paragrahp. This is a paragrahp. This is a paragrahp. This is a
+        paragrahp. This is a paragrahp. This is a paragrahp. This is a
+        paragrahp. This is a paragrahp. This is a paragrahp.
+      </p>
+    </section>
+
+    <section class="section" id="formatting">
+      <h4>//Section - 03</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.FORMATTING</strong>
+      </h1>
+      <p>.......</p>
+
+      <p>This is a <strong>Strong</strong></p>
+      <p>This is a <b>Bold</b></p>
+      <p>This is a <em>Emphasize</em></p>
+      <p>This is a <mark>Mark</mark></p>
+      <p>This is a <sub>Subscript</sub></p>
+      <p>This is a <del>Strikeout</del></p>
+    </section>
+
+    <section class="section" id="Quotation">
+      <h4>//Section - 04</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.QUOTATION</strong>
+      </h1>
+      <p>.......</p>
+
+      <p>This is a <q>Quotation</q></p>
+      <blockquote>
+        This is a blockquote. This is a blockquote. This is a blockquote. This
+        is a blockquote. This is a blockquote. This is a blockquote. This is a
+        blockquote. This is a blockquote.
+      </blockquote>
+      <!-- bdo สามารถกลับข้อความได้โดยทางทิศทางที่กำหนด
+           dir คือ Direction
+            rtl คือ right to left -->
+      <bdo dir="rtl">This is a bdo = rtl.</bdo>
+
+      <!-- abbr สามารถบอกตัวย่อของข้อความนั้นได้ -->
+      <p>This is a <abbr title="World Health Organization">WHO</abbr></p>
+    </section>
+
+    <section class="section" id="Link">
+      <h4>//Section - 05</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.LINK</strong>
+      </h1>
+      <p>.......</p>
+
+      <a href="https://www.google.co.th/">Click here!</a>
+      <!-- br คือการเว้นบรรทัด -->
+      <br />
+      <!-- target="_blank" คือ เมื่อกดlinkไปจะออกจากเว็บเรา -->
+      <a href="https://www.google.co.th/" target="_blank">
+        Click here! Target Blank
+      </a>
+      <a href="https://www.google.co.th/"> <p>This is a paragrahp.</p> </a>
+    </section>
+
+    <section class="section" id="Media">
+      <h4>//Section - 06</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.MEDIA</strong>
+      </h1>
+      <p>.......</p>
+
+      <!-- src คือ Source 
+        alt คือ ข้อความที่จะขึ้นตอนรูปไม่ขึ้น มักใส่ว่ารูปนี้คือรูปอะไร ให้ตรงกับSEO (Search Engine Optimization)
+      width height สามารถกำหนดขนาดได้-->
+      <img src="image/firefox.jpg" alt="firefox" width="400" />
+      <img src="" alt="firefox" width="400" />
+
+      <!-- สามารถใส่ autoplay ต่อได้จะทำให้วิดีโอเล่นเอง -->
+      <video
+        src="https://futureskill.s3-ap-southeast-1.amazonaws.com/super+content.mp4"
+        width="400"
+      ></video>
+
+      <!-- สามารถใส่ autoplay ต่อได้จะทำให้เสียงเล่นเอง -->
+      <audio src="audio/audio.mp3"></audio>
+    </section>
+
+    <section class="section" id="Table">
+      <h4>//Section - 07</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.TABLE</strong>
+      </h1>
+      <p>.......</p>
+
+      <table>
+        <!-- <caption> ใส่ชื่อตารางได้ -->
+        <caption>
+          My Table
+        </caption>
+
+        <!-- <tr> คือ table row -->
+        <tr>
+          <!-- <th> คือ table head 
+            colspan และ rowspan สามารถปรับขนาดได้-->
+          <th colspan="2">title</th>
+          <th>date</th>
+        </tr>
+
+        <tr>
+          <!-- <td> คือ table data-->
+          <td>John</td>
+          <td>20/02/2020</td>
+        </tr>
+
+        <tr>
+          <!-- <td> คือ table data-->
+          <td>Red</td>
+          <td>14/01/2022</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="section" id="List">
+      <h4>//Section - 08</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.LIST</strong>
+      </h1>
+      <p>.......</p>
+
+      <!-- <ol> คือ order list
+        ถ้าไม่ได้กำหนด type จะเป็น ลำดับ 1. 2. 3. -->
+      <ol>
+        <!-- <li> คือ list-->
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ol>
+
+      <!-- type="A" จะเป็นลำดับแบบ alphabet-->
+      <ol type="A">
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ol>
+
+      <!-- type="I" จะเป็นลำดับแบบเลขโรมัน-->
+      <ol type="I">
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ol>
+
+      <!-- <ul> คือ unorder list
+        ถ้าไม่ได้กำหนด style จะเป็น กลม ๆ -->
+      <ul>
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ul>
+
+      <!-- style="list-style-type: square; จะเป็น เหลี่ยม ๆ -->
+      <ul style="list-style-type: square;">
+        <li>My name is A.</li>
+        <li>My name is B.</li>
+        <li>My name is C.</li>
+      </ul>
+
+      <!-- <dl> คือ description list -->
+      <dl>
+        <!-- <dt> คือ description title -->
+        <dt>A</dt>
+        <!-- <dd> คือ description data -->
+        <dd>My name is A.</dd>
+
+        <dt>B</dt>
+        <dd>My name is B.</dd>
+      </dl>
+    </section>
+
+    <section class="section" id="iframe">
+      <h4>//Section - 09</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.iFRAME</strong>
+      </h1>
+      <p>.......</p>
+
+      <!-- iframe เอามาจากในyoutube
+      และต้องใส่ width height เอง มันไม่autoให้-->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/c9RzZpV460k"
+      ></iframe>
+
+    </section>
+
+    <section class="section" id="Script">
+      <h4>//Section - 10</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.SCRIPT</strong>
+      </h1>
+      <p>.......</p>
+
+      <p id="test-script">THIS IS A</p>
+      <!-- <script> เอาไว้ใส่JS ในเว็บ -->
+      <!-- แบบเขียนตรงนี้เลย -->
+      <script type="text/javascript">
+        // function runAlert เอาไว้ให้run ตอนไหน
+        function runAlert() {
+          // alert คือการแจ้งเตือน (คล้าย ๆ popup)
+          alert("This is a SCRIPT!");
+        }
+
+        //
+        document.getElementById("test-script").innerHTML = "MY NAME IS";
+      </script>
+
+      <!-- แบบ import script จากไฟล์มา 
+      src ใส่ที่มาของไฟล์
+      defer ให้script runเมื่อหน้าเว็บโหลดเสร็จ-->
+      <script type="text/javascript" src="" async defer></script>
+    </section>
+
+    <section class="section" id="Code">
+      <h4>//Section - 11</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.CODE</strong>
+      </h1>
+      <p>.......</p>
+
+      <!-- <pre> เอาไว้แสดงCode มีการเว้นบรรทัดให้ตามcode -->
+      <pre>
+            <code>
+              function test(a,b){
+                return a+b;
+              }
+            </code>
+          </pre>
+
+      <!-- <var> คือ variable -->
+      <p><var>a</var> = 1+2</p>
+    </section>
+
+    <section class="section" id="Form">
+      <h4>//Section - 12</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.FORM</strong>
+      </h1>
+      <p>.......</p>
+
+      <!-- <form action=""> action คือ บอกว่าให้submitข้อมูลไปที่ไหน -->
+      <form>
+        <!-- <input> หลัก ๆ มีดังนี้..-->
+        <!-- type="text" สามารถพิมพ์textได้ -->
+        text: <input type="text" /><br /><br />
+
+        <!-- readonly อ่านได้อย่างเดียว แก้ไขไม่ได้ 
+            value="README" คำที่แสดง -->
+        text2: <input type="text2" readonly value="README" /><br /><br />
+
+        <!-- type="number" สามารถพิมพ์ได้แต่ตัวเลข-->
+        number: <input type="number" /><br /><br />
+
+        <!-- type="password" ช่องพิมพ์เป็น password  -->
+        password: <input name="password" type="password" /><br /><br />
+
+        <!-- type="submit" ปุ่ม submit -->
+        submit: <input type="submit" /><br /><br />
+
+        <!-- textarea พท.กรอกข้อมูล รองรับการเว้นบรรทัด-->
+        textarea: <textarea name="" cols="30" rows="10"></textarea><br /><br />
+
+        <!-- select -->
+        select:
+        <select name="">
+          <!-- option ตัวเลือกในนั้น -->
+          <option value="A">Ant</option>
+          <option value="B" selected>Bird</option>
+          <option value="C">Cat</option> </select
+        ><br /><br />
+
+        <!-- input type="radio" เลือกติ้ก-->
+        Blue: <input type="radio" value="blue" /> Red:
+        <input type="radio" value="red" /><br />
+
+        <!-- input type="checkbox" แบบcheckbox-->
+        Green: <input type="checkbox" /><br /><br />
+
+        <!-- type="text" disabled ทำอะไรไม่ได้เลย -->
+        <input type="text" disabled /><br /><br />
+
+        <!-- button-->
+        <!-- ปุ่มนี้จะเหมือนด้านบนเลย คือsubmit form -->
+        <button onsubmit="" type="submit">Click Me</button><br /><br />
+
+        <!-- ปุ่มเฉย ๆ  -->
+        <button onclick="" type="button">Click Me</button>
+      </form>
+    </section>
+
+    <section class="section" id="CSS">
+      <h4>//Section - 13</h4>
+      <h1 style="color: rgb(189, 67, 67);">
+        <strong>.CSS</strong>
+      </h1>
+      <p>.......</p>
+
+      <p>
+        <!-- การเรียกใช้ CSS มีอยู่ 3 แบบ คือ -->
+        <h3><strong>. // CSS Sources</strong></h3>
+        There are 3 typical ways to include CSS in your webpages.
+        <br />Those 3 ways are: Inline CSS, Internal CSS, External CSS
+      </p>
+
+      <dl>
+        <dt><strong>1. Inline CSS</strong></dt>
+        <!-- style ใส่ได้มากกว่า 1 โดยขั้นด้วยเครื่องหมาย ; -->
+        <img src="image/Inline CSS.jpg" alt="" width="400" /><br /><br />
+
+        <!--
+          <p style="text-align: center; color: rgb(67, 75, 189);">
+          I'm a paragraph
+        </p> -->
+
+        <dt><strong>2. Internal CSS</strong></dt>
+        <img src="image/Internal CSS.jpg" alt="" width="400" /><br /><br />
+
+        <dt><strong>3. External CSS</strong></dt>
+        <img src="image/External CSS.jpg" alt="" width="400" />
+      </dl>
+      
+      <p>.......</p>
+
+      <p>
+      <h3><strong>. // CSS Properties</strong></h3>
+      <ul>
+          <li>Selector</li>
+          <!-- คือ การเลือกว่าจะตกแต่งstyleไหนได้ -->
+          
+          <li>Declaration block</li>
+          <!-- คือ ต้องอยู่ในวงเล็บ { } -->
+
+          <li>Inheritance</li>
+          <!-- คือ มีการสืบทอดจากparent ไป child เช่นการกำหนดFont -->
+          <img src="image/3.jpg" alt="" width="400" /><br /><br />
+
+          <li>Whitespace</li>
+          <!-- คือ การเว้นวรรคไม่มีความหมาย สามารถเขียนติดกันได้ -->
+          <img src="image/4.jpg" alt="" width="400" /><br /><br />
+
+          <li>Specificity</li>
+          <!-- คือ ระบุ สามารถเขียนCSSทับกันได้ โดยที่มีความSpecificity อยู่
+            ว่าอันไหนจะแสดงอันไหน -->
+          <img src="image/5-1.jpg" alt="" width="400" />
+          <img src="image/5-2.jpg" alt="" width="400" />
+
+        </ul>
+      </p>
+
+      <p>.......</p>
+
+      <p>
+      <h3><strong>. // CSS Syntax</strong></h3>
+          <img src="image/CSS Syntax.jpg" alt="" width="400" />
+      </p>
+
+    </section>
+  </body>
+</html>
